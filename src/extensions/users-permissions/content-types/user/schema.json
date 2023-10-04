@@ -68,6 +68,22 @@
     "uuid": {
       "type": "uid",
       "targetField": "username"
+    },
+    "vendor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vendor.vendor",
+      "mappedBy": "users_permissions_user"
+    },
+    "Picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

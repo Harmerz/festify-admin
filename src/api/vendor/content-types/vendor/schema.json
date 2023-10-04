@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendors",
+  "info": {
+    "singularName": "vendor",
+    "pluralName": "vendors",
+    "displayName": "vendor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uuid": {
+      "type": "uid"
+    },
+    "Regions": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "text"
+    },
+    "Harga": {
+      "type": "biginteger"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Descriptions": {
+      "type": "richtext"
+    },
+    "Picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "vendor"
+    }
+  }
+}
