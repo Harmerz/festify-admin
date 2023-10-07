@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vendor",
     "pluralName": "vendors",
-    "displayName": "vendor"
+    "displayName": "vendor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,20 +31,27 @@
       "type": "richtext"
     },
     "Picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "vendor"
+    },
+    "Rate": {
+      "type": "decimal"
+    },
+    "saved": {
+      "type": "integer"
     }
   }
 }

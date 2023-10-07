@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_picts",
+  "info": {
+    "singularName": "user-pict",
+    "pluralName": "user-picts",
+    "displayName": "userPict"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "photos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

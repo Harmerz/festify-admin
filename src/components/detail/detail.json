@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_detail_details",
+  "info": {
+    "displayName": "detail",
+    "icon": "exit"
+  },
+  "options": {},
+  "attributes": {
+    "keperluan": {
+      "type": "string"
+    },
+    "percent": {
+      "type": "decimal"
+    },
+    "value": {
+      "type": "biginteger"
+    }
+  }
+}

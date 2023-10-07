@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acaras",
+  "info": {
+    "singularName": "acara",
+    "pluralName": "acaras",
+    "displayName": "Acara",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tanggal": {
+      "type": "datetime"
+    },
+    "kode": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "biginteger"
+    },
+    "Tim": {
+      "displayName": "tim",
+      "type": "component",
+      "repeatable": false,
+      "component": "detail.tim"
+    }
+  }
+}

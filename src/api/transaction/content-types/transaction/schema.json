@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "singularName": "transaction",
+    "pluralName": "transactions",
+    "displayName": "Transaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "bukti": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "yang_dipesan": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "confirmation": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

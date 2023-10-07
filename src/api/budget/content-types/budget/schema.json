@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "budgets",
+  "info": {
+    "singularName": "budget",
+    "pluralName": "budgets",
+    "displayName": "budget",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "budget": {
+      "type": "biginteger"
+    },
+    "detail": {
+      "displayName": "detail",
+      "type": "component",
+      "repeatable": true,
+      "component": "detail.detail"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

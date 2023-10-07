@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_detail_tims",
+  "info": {
+    "displayName": "tim",
+    "icon": "emotionHappy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "idMongo": {
+      "type": "string"
+    },
+    "posisi": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
