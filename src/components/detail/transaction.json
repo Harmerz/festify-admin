@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_detail_transactions",
+  "info": {
+    "displayName": "Transaction",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "vendors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vendor.vendor"
+    }
+  }
+}
