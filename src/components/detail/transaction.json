@@ -7,10 +7,35 @@
   },
   "options": {},
   "attributes": {
-    "vendors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::vendor.vendor"
+    "vendor": {
+      "type": "string"
+    },
+    "photos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "pembelian": {
+      "type": "date"
+    },
+    "harga": {
+      "type": "biginteger"
+    },
+    "statusTrans": {
+      "type": "enumeration",
+      "enum": [
+        "selesai",
+        "belum-dibayar",
+        "proses"
+      ]
+    },
+    "idVendor": {
+      "type": "integer"
     }
   }
 }
