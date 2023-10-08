@@ -4,7 +4,8 @@
   "info": {
     "singularName": "user-transaction",
     "pluralName": "user-transactions",
-    "displayName": "UserTransaction"
+    "displayName": "UserTransaction",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,7 @@
     "Transaction": {
       "displayName": "Transaction",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "detail.transaction"
     }
   }

@@ -30,7 +30,7 @@
     "Tim": {
       "displayName": "tim",
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "detail.tim"
     }
   }
